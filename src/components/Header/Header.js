@@ -1,24 +1,44 @@
 import React from 'react';
+import Collection from '../../pages/Collection/Collection.js'
+import NavBtns from '../NavBtns/NavBtns.js'
+import Container from 'react-bootstrap'
 import './style.css'
 
 
-function Header(){
-    return(
-<div class="header">
-  <div class="sides">
-    <a href="#" class="logo">BLOG</a>
-  </div>
-  <div class="sides"> <a href="#" class="menu"> </a></div>
-    <div class="info">
-        <h4><a href="#category">UI DESIGN</a></h4>
-        <h1>KEN BURNS HEADERS ARE THE BEST</h1>
-        <div class="meta">
-        <a  href="https://twitter.com/nodws" target="_b" class="author"></a><br />
-        By <a href="https://twitter.com/nodws" target="_b">James Nodws</a> on May 30, 2019
-    </div>
-  </div>
-</div>
+function Header() {
+    return (
+        <div className="Container">
+            <NavBtns />
+            <div className="Container">
+                <div id="title" className="slide header">
+                    <h1>Hazel Tuxhorn</h1>
+                </div>
+                <Collection />
+                <div id="slide1" className="slide">
 
+                </div>
+
+                <div id="slide2" className="slide">
+                    <div className="title">
+                        <h1>Slide 2</h1>
+                        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+                    </div>
+                    <img src="https://lorempixel.com/640/480/abstract/6/" alt="1234" />
+                    <img src="https://lorempixel.com/640/480/abstract/4/" alt="1234" />
+                </div>
+
+                <div id="slide3" className="slide">
+                    <div className="title">
+                        <h1>Slide 3</h1>
+                        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+                    </div>
+                </div>
+
+                <div id="slide4" className="slide header">
+                    <h1>The End</h1>
+                </div>
+            </div>
+        </div>
     )
 }
 
