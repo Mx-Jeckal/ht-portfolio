@@ -1,41 +1,49 @@
 import React from 'react';
-import Collection from '../../pages/Collection/Collection.js'
+// import Collection from '../../pages/Collection/Collection.js'
 import NavBtns from '../NavBtns/NavBtns.js'
+// import Img from '../Img/Img.js'
+import Slider from '../Slider/Slider.js'
+import Footer from '../Footer/Footer.js'
 import Container from 'react-bootstrap'
 import './style.css'
+// import slider from 'infinite-react-carousel/lib/carousel/slider';
 
 
 function Header() {
     return (
-        <div className="Container">
-            <NavBtns />
+        <div>
             <div className="Container">
-                <div id="title" className="slide header">
-                    <h1>Hazel Tuxhorn</h1>
-                </div>
-                <Collection />
-                <div id="slide1" className="slide">
-
-                </div>
-
-                <div id="slide2" className="slide">
-                    <div className="title">
-                        <h1>Slide 2</h1>
-                        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+            <NavBtns />
+                <div className="Container">
+                    <div id="title" className="slide header">
+                    
+                        <h1>Hazel Tuxhorn</h1>
                     </div>
-                    <img src="https://lorempixel.com/640/480/abstract/6/" alt="1234" />
-                    <img src="https://lorempixel.com/640/480/abstract/4/" alt="1234" />
-                </div>
 
-                <div id="slide3" className="slide">
-                    <div className="title">
-                        <h1>Slide 3</h1>
-                        <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+                    <div id="slide1" className="slide">
+                    <Slider />
                     </div>
-                </div>
+                    {/* <Collection /> */}
+                    
+                    <div id="slide2" className="slide">
+                        <div className="title">
+                            <h1>Slide 2</h1>
+                            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+                        </div>
+                        <img src="https://lorempixel.com/640/480/abstract/4/" alt="1234" />
+                        <img src="https://lorempixel.com/640/480/abstract/4/" alt="1234" />
+                    </div>
 
-                <div id="slide4" className="slide header">
-                    <h1>The End</h1>
+                    <div id="slide3" className="slide">
+                        <div className="title">
+                            <h1>Slide 3</h1>
+                            <p>Lorem ipsum dolor sit amet, in velit iudico mandamus sit, persius dolorum in per, postulant mnesarchum cu nam. Malis movet ornatus id vim, feugait detracto est ea, eam eruditi conceptam in. Ne sit explicari interesset. Labores perpetua cum at. Id viris docendi denique vim.</p>
+                        </div>
+                    </div>
+
+                    <div id="slide4" className="footer header">
+<Footer />
+                    </div>
                 </div>
             </div>
         </div>
