@@ -1,12 +1,14 @@
 import React from 'react';
 import './style.css'
+import app from '../../images/app3.JPG'
 
 
-function Card(){
+function Card5(props){
     return(
             <div className="con">
                 <div className="music-player">
                     <div className="cover">
+                        <img src={app} alt={props.alt}></img>
                     </div>
                 </div>
             </div>
@@ -14,4 +16,4 @@ function Card(){
 }
 
 
-export default Card;
+export default Card5;

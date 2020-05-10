@@ -139,3 +139,11 @@ img:last-of-type {
 #slide4 {
   background: #222;
 }
+
+#image{
+  height: 600px
+}
+
+#image2{
+  height: 400px
+}
