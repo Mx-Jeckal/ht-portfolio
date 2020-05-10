@@ -13,27 +13,27 @@ function SimpleSlider() {
     return (
         <Slider dots>
             <div>
-                <h3>1</h3>
-               <Card/>
+                <h2>Drinky Links</h2>
+                <Card />
             </div>
             <div>
-                <h3>2</h3>
+                <h2>Covid Check</h2>
                 <Card2 />
             </div>
             <div>
-                <h3>3</h3>
+                <h2>Burger Dreams</h2>
                 <Card3 />
             </div>
             <div>
-                <h3>4</h3>
+                <h2>Workout Recorder</h2>
                 <Card4 />
             </div>
             <div>
-                <h3>5</h3>
+                <h2>Expense Tracker</h2>
                 <Card5 />
             </div>
             <div>
-                <h3>6</h3>
+                <h2>Work Scheduler</h2>
                 <Card6 />
             </div>
         </Slider>
