@@ -121,7 +121,8 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-image: url("../../images/white_ink.jpg");
+  /* background-image: url("../../images/white_ink.jpg"); */
+  background-color: #2E3746;
   transform: translateZ(-1px) scale(2);
 }
 
@@ -131,9 +132,10 @@ img:last-of-type {
 }
 
 #slide3:before {
-  background-image: url("../../images/pink_ink.jpg");
+  /* background-image: url("../../images/pink_ink.jpg"); */
   transform: translateZ(-1px) scale(2);
-  background-size: 200%;
+  background-color: #2E3746;
+  /* background-size: 200%; */
 }
 
 #slide4 {

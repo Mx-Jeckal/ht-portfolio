@@ -27,7 +27,9 @@ function Header({id}) {
                                 <h1 ><u>Hazel Tuxhorn</u></h1>
                             </div>
                         </div>
-                        <div id="slide1" className="slide">
+                        <div 
+                        id="slide1" 
+                        className="slide">
                             <Slider/>
                         </div>
 
@@ -42,7 +44,9 @@ function Header({id}) {
                             <img id="image2" src={ht2} alt="1234" />
                         </div>
 
-                        <div id="slide3" className="slide">
+                        <div 
+                        // id="slide3" 
+                        className="slide">
                             <div className="title">
                             </div>
                         </div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import './style.css'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { Navbar, Nav } from 'react-bootstrap'
+import { Link } from "react-router-dom";
 
 
 class NavBtns extends Component {
@@ -16,23 +17,12 @@ class NavBtns extends Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link>
-              <Link
-                href="#section1"
-                activeClass="active"
-                to="section1"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 1
-              </Link>
+            <Nav.Link
+              to='/section1'
+              href='#section1'
+            >Section 1</Nav.Link>
 
-            </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
-         </Nav.Link>
+
           </Nav>
           <Nav>
             <Nav.Link href="#portfolio">Portfolio</Nav.Link>
